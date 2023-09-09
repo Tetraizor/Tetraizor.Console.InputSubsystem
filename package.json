@@ -1,7 +1,7 @@
 {
   "name": "com.tetraizor.console.inputsubsystem",
   "displayName": "Console Input Subsystem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Umuthan Ozel",
     "email": "ozelumuthan@gmail.com",
@@ -10,6 +10,7 @@
   "description": "A plugin for Tetraizor.Console that enables basic input.",
   "dependencies": {
     "com.tetraizor.monosingleton": "https://github.com/Tetraizor/Tetraizor.MonoSingleton.git",
+    "com.tetraizor.debugutils": "https://github.com/Tetraizor/Tetraizor.DebugUtils.git",
     "com.tetraizor.bootstrap": "https://github.com/Tetraizor/Tetraizor.Bootstrap.git#1.2.0",
     "com.tetraizor.console": "https://github.com/Tetraizor/Tetraizor.Console.git",
     "com.unity.inputsystem": "1.7.0"

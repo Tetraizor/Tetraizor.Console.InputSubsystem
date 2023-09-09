@@ -1,6 +1,8 @@
-using Tetraizor.Bootstrap.Base;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Tetraizor.Bootstrap.Base;
+using Tetraizor.Systems.Console;
+using Tetraizor.DebugUtils;
 
 namespace Tetraizor.Console.InputSubsystem
 {
@@ -56,8 +58,7 @@ namespace Tetraizor.Console.InputSubsystem
             }
             else
             {
-                // TODO: Hook this to the main Debug Message bus.
-                Debug.LogWarning("Console input properties are not assigned.");
+                DebugBus.LogWarning("Console input properties are not assigned.");
             }
         }
 
