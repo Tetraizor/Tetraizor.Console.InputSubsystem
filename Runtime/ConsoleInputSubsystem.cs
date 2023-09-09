@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Tetraizor.Bootstrap.Base;
@@ -48,7 +49,7 @@ namespace Tetraizor.Console.InputSubsystem
             return "Console System";
         }
 
-        public void Init(IPersistentSystem system)
+        public IEnumerator LoadSubsystem(IPersistentSystem system)
         {
             _consoleSystem = (ConsoleSystem)system;
 
@@ -60,6 +61,8 @@ namespace Tetraizor.Console.InputSubsystem
             {
                 DebugBus.LogWarning("Console input properties are not assigned.");
             }
+
+            yield return null;
         }
 
         #endregion
